@@ -3,11 +3,7 @@
 # Glide.ai - Dark, modern, website template
 
 - [Live demo][live-demo]
-- [Play on Stackblitz][stackblitz-demo]
 - [Learn how to build this website on YouTube][course-youtube]
-- Documentations: [Nuxt](https://nuxt.com), [Prismic](https://prismic.io/docs/nuxt-3-setup), [Tailwind CSS](https://tailwindcss.com/docs/styling-with-utility-classes), [GSAP](https://gsap.com/docs/v3)
-
-[![Deploy to NuxtHub](https://hub.nuxt.com/button.svg)][nuxthub-deploy]
 
 ## Quick Start
 
@@ -91,8 +87,6 @@ yarn preview
 bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-
 ## License
 
 ```
@@ -112,6 +106,4 @@ limitations under the License.
 ```
 
 [live-demo]: https://prismic-demo-glideai.nuxt.dev
-[stackblitz-demo]: https://stackblitz.com/github/prismicio-community/nuxt-starter-prismic-glideai
-[nuxthub-deploy]: https://hub.nuxt.com/new?repo=prismicio-community/nuxt-starter-prismic-glideai
 [course-youtube]: https://www.youtube.com/watch?v=EmvCh7Jb0Mw
