@@ -14,11 +14,14 @@ defineProps(
 </script>
 
 <template>
-  <section
+  <Bounded
     :data-slice-type="slice.slice_type"
     :data-slice-variation="slice.variation"
   >
-    Placeholder component for rich_text (variation: {{ slice.variation }})
-    Slices
-  </section>
+    <PrismicRichText
+      class="prose prose-lg prose-slate prose-invert w-full"
+      :field="slice.primary.text"
+      wrapper="div"
+    />
+  </Bounded>
 </template>

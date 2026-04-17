@@ -40,9 +40,19 @@ export default defineNuxtConfig({
     preview: '/api/preview',
     clientConfig: {
     routes: [
-      { type: 'case_study', path: '/case-study/:uid' },
-      { type: 'settings',       path: '/:uid' }, 
-      { type: 'homepage',   uid: 'home', path: '/' },
+      { 
+        type: 'case_study', 
+        path: '/case-study/:uid' 
+      },
+      { 
+        type: 'settings',
+        path: '/:uid' 
+      }, 
+      { 
+        type: 'homepage',
+        uid: 'home', 
+        path: '/' 
+      },
     ],
   }
   },
