@@ -39,22 +39,12 @@ export default defineNuxtConfig({
     endpoint: repositoryName,
     preview: '/api/preview',
     clientConfig: {
-      routes: [
-        {
-          type: 'case_study',
-          path: '/case-study/:uid',
-        },
-        {
-          type: 'page',
-          path: '/:uid',
-        },
-        {
-          type: 'page',
-          uid: 'home',
-          path: '/',
-        },
-      ]
-    }
+    routes: [
+      { type: 'case_study', path: '/case-study/:uid' },
+      { type: 'settings',       path: '/:uid' }, 
+      { type: 'homepage',   uid: 'home', path: '/' },
+    ],
+  }
   },
 
   compatibilityDate: '2025-01-06',
