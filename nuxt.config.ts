@@ -1,3 +1,4 @@
+import { fileURLToPath, URL } from "node:url";
 import { repositoryName } from './slicemachine.config.json';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
@@ -24,7 +25,7 @@ export default defineNuxtConfig({
     }
   },
 
-  css: ['./app/assets/css/main.css'],
+  css: ['~/assets/css/main.css'],
 
   modules: [
     '@nuxt/eslint',
@@ -61,5 +62,9 @@ export default defineNuxtConfig({
 
   nitro: {
     preset: 'vercel'
+  },
+
+  alias: {
+    '~/slices': fileURLToPath(new URL('./slices', import.meta.url))
   }
 })
