@@ -42,6 +42,11 @@ export default defineNuxtConfig({
     clientConfig: {
     routes: [
       { 
+        type: 'homepage',
+        uid: 'home', 
+        path: '/' 
+      },
+      { 
         type: 'case_study', 
         path: '/case-study/:uid' 
       },
@@ -49,11 +54,6 @@ export default defineNuxtConfig({
         type: 'settings',
         path: '/:uid' 
       }, 
-      { 
-        type: 'homepage',
-        uid: 'home', 
-        path: '/' 
-      },
     ],
   }
   },
