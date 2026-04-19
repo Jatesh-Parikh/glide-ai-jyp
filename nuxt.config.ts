@@ -3,9 +3,9 @@ import { repositoryName } from './slicemachine.config.json';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  // future: {
-  //   compatibilityVersion: 4
-  // },
+  future: {
+    compatibilityVersion: 4
+  },
 
   devtools: { enabled: true },
 
@@ -42,11 +42,6 @@ export default defineNuxtConfig({
     clientConfig: {
     routes: [
       { 
-        type: 'homepage',
-        uid: 'home', 
-        path: '/' 
-      },
-      { 
         type: 'case_study', 
         path: '/case-study/:uid' 
       },
@@ -54,6 +49,11 @@ export default defineNuxtConfig({
         type: 'settings',
         path: '/:uid' 
       }, 
+      { 
+        type: 'homepage',
+        uid: 'home', 
+        path: '/' 
+      },
     ],
   }
   },
